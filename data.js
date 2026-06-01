@@ -1,4 +1,4 @@
-/**
+﻿/**
  * EL NEXO DE ARIXU - BASE DE DATOS DE USUARIOS
  * 
  * Este archivo contiene la lista de usuarios cargados desde Discord y Twitch.
@@ -66,8 +66,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Jaratos",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Jaratos.png"
   },
   {
     nombre: "LePogti",
@@ -456,8 +456,8 @@ const usuariosNexo = [
   },
   {
     nombre: "G4Palau",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/G4Palau.png"
   },
   {
     nombre: "Gangpuga",
@@ -1046,8 +1046,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Sito",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Sito.png"
   },
   {
     nombre: "Sneax",
@@ -1203,5 +1203,10 @@ const usuariosNexo = [
     nombre: "CodigoArixu",
     estado: "activo",
     url_captura: "Capturas/CodigoArixu.png"
+  },
+  {
+    nombre: "Terron_18",
+    estado: "activo",
+    url_captura: "Capturas/Terron_18.png"
   }
 ];

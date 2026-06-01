@@ -174,45 +174,50 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // --- MODAL / LIGHTBOX BLINDADO (Event Delegation) ---
+// --- CONTROL DE MODAL (BLINDADO Y CON CLONADO DE NODOS) ---
   function setupModal() {
-    // 1. Event Delegation Global en el document para el botón cerrar nuclear (#btnCerrarModal)
-    document.addEventListener("click", (evento) => {
-      if (evento.target.closest("#btnCerrarModal")) {
-        evento.preventDefault();
+    const modal = document.getElementById("image-modal");
+    const btnCerrarModal = document.getElementById("btnCerrarModal");
+
+    if (!modal) return;
+
+    if (btnCerrarModal) {
+      btnCerrarModal.onclick = function(e) {
+        e.preventDefault();
         closeModal();
-        document.getElementById("inicio").scrollIntoView({ behavior: "smooth" });
+      };
+    }
+
+    modal.addEventListener("click", (e) => {
+      if (e.target !== modalImg && e.target !== modalCaption && e.target.id !== "modal-video") {
+        closeModal();
       }
     });
 
-    // 2. Cierre por clic fuera en el fondo oscuro
-    modal.addEventListener("click", (e) => {
-      if (e.target !== modalImg && e.target !== modalCaption && e.target !== modalVideo) {
-        closeModal();
-      }
-    });
-    
-    // 3. Cierre con tecla Escape
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        closeModal();
-      }
+      if (e.key === "Escape") closeModal();
     });
   }
 
   function openModal(imgSrc, captionText) {
+    const modalVideo = document.getElementById("modal-video"); // Lo buscamos en caliente
+    
     modal.style.display = "flex";
+    modal.classList.add("active", "show");
+    
     const isVideo = imgSrc.toLowerCase().endsWith(".mp4") || imgSrc.toLowerCase().endsWith(".mov");
     
-    if (isVideo) {
+    if (isVideo && modalVideo) {
       modalImg.style.display = "none";
       modalVideo.style.display = "block";
       modalVideo.src = imgSrc;
-      modalVideo.play();
+      modalVideo.play().catch(() => {});
     } else {
-      modalVideo.style.display = "none";
-      modalVideo.pause();
-      modalVideo.src = "";
+      if (modalVideo) {
+        modalVideo.style.display = "none";
+        modalVideo.pause();
+        modalVideo.src = "";
+      }
       modalImg.style.display = "block";
       modalImg.src = imgSrc;
     }
@@ -222,10 +227,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function closeModal() {
+    const modalVideo = document.getElementById("modal-video"); // Lo buscamos en caliente
+    
     modal.style.display = "none";
+    modal.classList.remove("active", "show");
     modalImg.src = "";
-    modalVideo.pause();
-    modalVideo.src = "";
+    
+    if (modalVideo) {
+      modalVideo.pause();
+      modalVideo.src = "";
+    }
+    
     modalCaption.textContent = "";
     document.body.style.overflow = "auto";
   }
