@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operación: Código Arixu | Meta Código Fortnite</title>
+  
+  <!-- Google Fonts: Orbitron & Rajdhani -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Gaming Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Space Deep Background & Slow Floating Particles -->
+  <div class="stars-bg"></div>
+  <div class="space-nebula"></div>
+  <div class="space-particles">
+    <div class="space-bubble sp-1"></div>
+    <div class="space-bubble sp-2"></div>
+    <div class="space-bubble sp-3"></div>
+  </div>
+
+  <!-- Header Section (ID inicio) -->
+  <header id="inicio" class="hero-section">
+    <div class="container">
+      
+      <!-- Floating Gaming Vector Elements -->
+      <div class="floating-symbol sym-gamepad">🎮</div>
+      <div class="floating-symbol sym-llama">🦙</div>
+      <div class="floating-symbol sym-diamond">💎</div>
+      
+      <div class="brand">
+        <span class="twitch-badge"><span class="live-dot"></span> Twitch Live</span>
+        <h1>OPERACIÓN: CÓDIGO <span>ARIXU</span></h1>
+      </div>
+      
+      <h2 class="hero-title">Meta de Código Arixu: <br><span class="highlight-text">¡Desbloquea las Skins!</span></h2>
+      <p class="hero-subtitle">
+        Apoya al canal usando el código de creador <span class="code-badge">ARIXU</span> en la tienda de Fortnite. 
+        ¡Únete a la meta mensual de 300 usuarios activos para desbloquear sorteos exclusivos para toda la comunidad!
+      </p>
+
+      <!-- Navigation actions -->
+      <div class="hero-actions">
+        <a href="#meta-central" class="btn btn-secondary">
+          <i class="fa-solid fa-bolt"></i> Ver Meta
+        </a>
+        <a href="#recompensas" class="btn btn-primary">
+          <i class="fa-solid fa-gift"></i> Ver Premios
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN 1: INSTRUCCIONES -->
+  <section id="instrucciones" class="instructions-section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title"><i class="fa-solid fa-compass"></i> Guía de Activación</h3>
+        <p class="section-subtitle">Sigue estos tres sencillos pasos para registrar tu apoyo en el nexo.</p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Paso 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon"><i class="fa-solid fa-store"></i></div>
+          <h4>Usa el Código</h4>
+          <p>Entra a la tienda de Fortnite o Epic Games, pulsa en <strong>"Apoya a un creador"</strong> e introduce el código <span class="highlight-code">ARIXU</span>.</p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon"><i class="fa-solid fa-camera"></i></div>
+          <h4>Saca Captura</h4>
+          <p>Toma una captura de pantalla clara de tu tienda de Fortnite donde se vea que tienes el código de creador activo.</p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon"><i class="fa-brands fa-discord"></i></div>
+          <h4>Envía a Discord</h4>
+          <p>Entra a nuestro servidor de Discord y sube tu captura al canal <span class="channel-badge">#codigo-arixu</span> para la validación de los mods.</p>
+        </div>
+      </div>
+
+      <!-- Alerta de 14 días -->
+      <div class="alert-box">
+        <div class="alert-icon">
+          <i class="fa-solid fa-triangle-exclamation pulse-warning"></i>
+        </div>
+        <div class="alert-content">
+          <h5>¡Atención! Fortnite borra el código cada 14 días</h5>
+          <p>Si tu código caduca, pasarás a la <strong>zona de inactivos</strong> automáticamente hasta que vuelvas a enviar la foto actualizada con el código renovado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: LA META CENTRAL -->
+  <section id="meta-central" class="nexus-section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title"><i class="fa-solid fa-gauge-high"></i> Dashboard de la Meta</h3>
+        <p class="section-subtitle">Progreso de la meta y listado de los usuarios con soporte activo en Fortnite.</p>
+      </div>
+
+      <!-- Central Progress Dashboard -->
+      <div class="dashboard-card">
+        <div class="dashboard-header">
+          <span class="dashboard-lbl">Progreso de la Meta</span>
+          <span class="dashboard-counter" id="active-ratio">0 / 300</span>
+        </div>
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-inner" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de Activos -->
+      <div class="grid-section-header">
+        <h4><i class="fa-solid fa-circle-check"></i> Escuadrón de Apoyo (Activos)</h4>
+      </div>
+      <div class="users-grid active-grid" id="active-users-grid">
+        <!-- Render dinámico JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: BLOQUE DE CADUCADOS (ZONA DE RENOVACIÓN) -->
+  <section id="zona-renovacion" class="renovacion-section">
+    <div class="container">
+      <div class="renovacion-container-box">
+        <div class="renovacion-title-box">
+          <h3><i class="fa-solid fa-clock-rotate-left"></i> Pendientes de Renovación</h3>
+          <p class="renovacion-message">
+            ⚠️ Han pasado 14 días y Epic Games ha borrado vuestro código. ¡Volved a poner <span class="highlight-code">ARIXU</span> en la tienda y pasad captura por Discord para volver a la Meta Central y seguir sumando!
+          </p>
+        </div>
+        
+        <!-- Cuadrícula de Inactivos -->
+        <div class="users-grid suspended-grid" id="suspended-users-grid">
+          <!-- Render dinámico JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4: EL GRAN FINAL -->
+  <section id="recompensas" class="rewards-section locked">
+    <div class="container">
+      <div class="rewards-ambient-light"></div>
+      
+      <div class="section-header">
+        <h3 class="section-title" id="rewards-title"><i class="fa-solid fa-lock"></i> Recompensas Bloqueadas</h3>
+        <p class="section-subtitle" id="rewards-subtitle">Al alcanzar los 300 códigos activos, desbloquearemos los siguientes premios:</p>
+      </div>
+
+      <!-- Grid de Recompensas -->
+      <div class="rewards-grid">
+        <!-- Tarjeta de Premio 1 -->
+        <div class="reward-card locked" id="reward-card-1">
+          <div class="reward-card-badge">Skin Especial 1</div>
+          <div class="reward-card-visual">
+            <i class="fa-solid fa-gift gift-icon"></i>
+            <div class="lock-circle"><i class="fa-solid fa-lock"></i></div>
+          </div>
+          <h4>Sorteo Skin Fortnite 1</h4>
+          <p class="reward-card-desc">Se desbloquea al alcanzar los 300 usuarios activos.</p>
+        </div>
+
+        <!-- Tarjeta de Premio 2 -->
+        <div class="reward-card locked" id="reward-card-2">
+          <div class="reward-card-badge">Lote Fortnite</div>
+          <div class="reward-card-visual">
+            <i class="fa-solid fa-gift gift-icon"></i>
+            <div class="lock-circle"><i class="fa-solid fa-lock"></i></div>
+          </div>
+          <h4>Sorteo Lote Skins 2</h4>
+          <p class="reward-card-desc">Se desbloquea al alcanzar los 300 usuarios activos.</p>
+        </div>
+
+        <!-- Tarjeta de Premio 3 -->
+        <div class="reward-card locked" id="reward-card-3">
+          <div class="reward-card-badge">Premio Gordo</div>
+          <div class="reward-card-visual">
+            <i class="fa-solid fa-gift gift-icon"></i>
+            <div class="lock-circle"><i class="fa-solid fa-lock"></i></div>
+          </div>
+          <h4>Sorteo Especial Skin 3</h4>
+          <p class="reward-card-desc">Se desbloquea al alcanzar los 300 usuarios activos.</p>
+        </div>
+      </div>
+
+      <!-- Mensaje Dinámico del Restante -->
+      <div class="rewards-status-card" id="dynamic-status-message">
+        Faltan <span id="users-remaining" class="status-highlight">300</span> usuarios activos para desbloquear la recompensa final.
+      </div>
+
+      <!-- Botón Volver Arriba -->
+      <div class="scroll-top-wrap">
+        <a href="#inicio" class="btn btn-secondary">
+          <i class="fa-solid fa-arrow-up"></i> Volver Arriba
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL / LIGHTBOX BLINDADO (z-index: 99999) -->
+  <div id="image-modal" class="modal-wrapper">
+    <button class="modal-close" id="btnCerrarModal">
+      ⬅ Volver
+    </button>
+    <div class="modal-body-container">
+      <img class="modal-img-element" id="modal-img" src="" alt="Captura de Fortnite">
+      <video class="modal-video-element" id="modal-video" src="" controls style="display:none; max-width:100%; max-height:75vh; border-radius:10px; border:2px solid var(--neon-cyan); box-shadow:0 0 35px rgba(0, 240, 255, 0.4);"></video>
+      <div id="modal-caption" class="modal-caption-text"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2026 Operación: Código Arixu. Creado con <i class="fa-solid fa-heart pulse-heart"></i> para la comunidad.</p>
+      <p class="disclaimer">Este sitio web no está afiliado, respaldado ni patrocinado por Epic Games o Fortnite.</p>
+    </div>
+  </footer>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
