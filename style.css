@@ -1139,6 +1139,7 @@ body {
   border: 2px solid var(--neon-cyan);
   box-shadow: 0 0 35px rgba(0, 240, 255, 0.4);
   animation: modalZoom 0.35s ease-out;
+  cursor: pointer;
 }
 
 @keyframes modalZoom {

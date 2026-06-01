@@ -16,12 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const rewardsSubtitle = document.getElementById("rewards-subtitle");
   const dynamicStatusMessage = document.getElementById("dynamic-status-message");
   
-  // Modal de imagen
-  const modal = document.getElementById("image-modal");
-  const modalImg = document.getElementById("modal-img");
-  const modalVideo = document.getElementById("modal-video");
-  const modalCaption = document.getElementById("modal-caption");
-
   // --- VARIABLES DE ESTADO ---
   const TARGET_GOAL = 300;
   
@@ -30,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function initApp() {
     renderApp();
-    setupModal();
   }
 
   // --- RENDERIZADO PRINCIPAL ---
@@ -103,22 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="user-thumbnail">
         ${mediaHtml}
-        <div class="user-thumbnail-hover-overlay">
-          <i class="fa-solid fa-expand"></i>
-        </div>
       </div>
     `;
-    
-    // Clic en miniatura
-    const thumbnail = card.querySelector(".user-thumbnail");
-    thumbnail.addEventListener("click", () => {
-      const statusText = estado === 'activo' ? 'Activo' : 'Pendiente de Renovación';
-      if (usuario.url_captura) {
-        openModal(usuario.url_captura, `${usuario.nombre} (${statusText})`);
-      } else {
-        openModal("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80", `${usuario.nombre} (Imagen de muestra - Sin captura adjunta aún)`);
-      }
-    });
     
     return card;
   }
@@ -174,73 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-// --- CONTROL DE MODAL (BLINDADO Y CON CLONADO DE NODOS) ---
-  function setupModal() {
-    const modal = document.getElementById("image-modal");
-    const btnCerrarModal = document.getElementById("btnCerrarModal");
 
-    if (!modal) return;
-
-    if (btnCerrarModal) {
-      btnCerrarModal.onclick = function(e) {
-        e.preventDefault();
-        closeModal();
-      };
-    }
-
-    modal.addEventListener("click", (e) => {
-      if (e.target !== modalImg && e.target !== modalCaption && e.target.id !== "modal-video") {
-        closeModal();
-      }
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeModal();
-    });
-  }
-
-  function openModal(imgSrc, captionText) {
-    const modalVideo = document.getElementById("modal-video"); // Lo buscamos en caliente
-    
-    modal.style.display = "flex";
-    modal.classList.add("active", "show");
-    
-    const isVideo = imgSrc.toLowerCase().endsWith(".mp4") || imgSrc.toLowerCase().endsWith(".mov");
-    
-    if (isVideo && modalVideo) {
-      modalImg.style.display = "none";
-      modalVideo.style.display = "block";
-      modalVideo.src = imgSrc;
-      modalVideo.play().catch(() => {});
-    } else {
-      if (modalVideo) {
-        modalVideo.style.display = "none";
-        modalVideo.pause();
-        modalVideo.src = "";
-      }
-      modalImg.style.display = "block";
-      modalImg.src = imgSrc;
-    }
-    
-    modalCaption.textContent = captionText;
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeModal() {
-    const modalVideo = document.getElementById("modal-video"); // Lo buscamos en caliente
-    
-    modal.style.display = "none";
-    modal.classList.remove("active", "show");
-    modalImg.src = "";
-    
-    if (modalVideo) {
-      modalVideo.pause();
-      modalVideo.src = "";
-    }
-    
-    modalCaption.textContent = "";
-    document.body.style.overflow = "auto";
-  }
 
   // --- MOTOR DE CONFETI EN CANVAS ---
   const canvas = document.getElementById("confetti-canvas");
