@@ -1146,8 +1146,8 @@ const usuariosNexo = [
   },
   {
     nombre: "X Ξ N Θ ツ",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/X Ξ N Θ ツ.mp4"
   },
   {
     nombre: "XxdanixXel",
