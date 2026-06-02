@@ -79,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
     card.className = "user-card";
     
     const initials = usuario.nombre.substring(0, 2).toUpperCase();
-    const dotClass = estado === 'activo' ? 'dot-active' : 'dot-suspended';
     
     const imgUrl = usuario.url_captura ? usuario.url_captura : "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80";
     
@@ -88,11 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `<video src="${imgUrl}" muted playsinline autoplay loop class="user-thumbnail-video" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"></video>`
       : `<img src="${imgUrl}" alt="Captura de ${usuario.nombre}" loading="lazy">`;
     
+    const statusIndicator = estado === 'activo'
+      ? `<span class="tag-active">👑 VIP</span>`
+      : `<span class="status-dot-indicator dot-suspended"></span>`;
+    
     card.innerHTML = `
       <div class="user-card-hdr">
         <div class="user-avatar-sphere">${initials}</div>
         <div class="user-title-name" title="${usuario.nombre}">${usuario.nombre}</div>
-        <span class="status-dot-indicator ${dotClass}"></span>
+        ${statusIndicator}
       </div>
       <div class="user-thumbnail">
         ${mediaHtml}

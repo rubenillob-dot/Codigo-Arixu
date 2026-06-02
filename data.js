@@ -1200,11 +1200,6 @@ const usuariosNexo = [
     url_captura: ""
   },
   {
-    nombre: "CodigoArixu",
-    estado: "activo",
-    url_captura: "Capturas/CodigoArixu.png"
-  },
-  {
     nombre: "Terron_18",
     estado: "activo",
     url_captura: "Capturas/Terron_18.png"
