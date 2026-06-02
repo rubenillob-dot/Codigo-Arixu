@@ -436,8 +436,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Ferdinang",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Ferdinang.png"
   },
   {
     nombre: "FerdinangVR46",
