@@ -100,9 +100,9 @@ const usuariosNexo = [
     url_captura: ""
   },
   {
-    nombre: "Ruben",
-    estado: "suspendido",
-    url_captura: ""
+    nombre: "rubenillo",
+    estado: "activo",
+    url_captura: "Capturas/rubenillo.png"
   },
   {
     nombre: "Victorsalc",
