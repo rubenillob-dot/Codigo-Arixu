@@ -86,8 +86,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Piyuyin6",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Piyuyin6.mov"
   },
   {
     nombre: "RM_GG",
@@ -538,6 +538,11 @@ const usuariosNexo = [
     nombre: "ivanft84",
     estado: "activo",
     url_captura: "Capturas/ivanft84.mp4"
+  },
+  {
+    nombre: "Ivanrs99",
+    estado: "activo",
+    url_captura: "Capturas/Ivanrs99.png"
   },
   {
     nombre: "Iván",

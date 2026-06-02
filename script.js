@@ -87,15 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `<video src="${imgUrl}" muted playsinline autoplay loop class="user-thumbnail-video" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"></video>`
       : `<img src="${imgUrl}" alt="Captura de ${usuario.nombre}" loading="lazy">`;
     
-    const statusIndicator = estado === 'activo'
-      ? `<span class="tag-active">👑 VIP</span>`
-      : `<span class="status-dot-indicator dot-suspended"></span>`;
-    
     card.innerHTML = `
       <div class="user-card-hdr">
         <div class="user-avatar-sphere">${initials}</div>
         <div class="user-title-name" title="${usuario.nombre}">${usuario.nombre}</div>
-        ${statusIndicator}
       </div>
       <div class="user-thumbnail">
         ${mediaHtml}
