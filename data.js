@@ -761,8 +761,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Malbelda15",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Malbelda15.png"
   },
   {
     nombre: "Manimanitas0140",
