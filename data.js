@@ -881,8 +881,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Nehuen",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Nehuen.png"
   },
   {
     nombre: "neskeloke",
@@ -1208,5 +1208,10 @@ const usuariosNexo = [
     nombre: "Terron_18",
     estado: "activo",
     url_captura: "Capturas/Terron_18.png"
+  },
+  {
+    nombre: "guapos_fc",
+    estado: "activo",
+    url_captura: "Capturas/guapos_fc.png"
   }
 ];
