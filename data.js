@@ -701,8 +701,8 @@ const usuariosNexo = [
   },
   {
     nombre: "LivingBenidorm",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/LivingBenidorm.png"
   },
   {
     nombre: "Lobito",
@@ -1213,5 +1213,25 @@ const usuariosNexo = [
     nombre: "guapos_fc",
     estado: "activo",
     url_captura: "Capturas/guapos_fc.png"
+  },
+  {
+    nombre: "The_Cancer_cam",
+    estado: "activo",
+    url_captura: "Capturas/The_Cancer_cam.png"
+  },
+  {
+    nombre: "Dharma86",
+    estado: "activo",
+    url_captura: "Capturas/Dharma86.png"
+  },
+  {
+    nombre: "Mauj",
+    estado: "activo",
+    url_captura: "Capturas/Mauj.png"
+  },
+  {
+    nombre: "Omar",
+    estado: "activo",
+    url_captura: "Capturas/Omar.mp4"
   }
 ];
