@@ -240,6 +240,11 @@ const usuariosNexo = [
     url_captura: ""
   },
   {
+    nombre: "Bailen",
+    estado: "activo",
+    url_captura: "Capturas/Bailen.png"
+  },
+  {
     nombre: "Blukito",
     estado: "suspendido",
     url_captura: ""
@@ -966,8 +971,8 @@ const usuariosNexo = [
   },
   {
     nombre: "R3flexction",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/R3flexction.png"
   },
   {
     nombre: "raquelvete",
