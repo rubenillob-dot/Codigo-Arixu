@@ -10,11 +10,6 @@
 
 const usuariosNexo = [
   {
-    nombre: "_laabluue.",
-    estado: "suspendido",
-    url_captura: ""
-  },
-  {
     nombre: "afterapocalypse",
     estado: "suspendido",
     url_captura: ""
@@ -666,8 +661,8 @@ const usuariosNexo = [
   },
   {
     nombre: "L Λ U R Λ ツ",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/L Λ U R Λ ツ.png"
   },
   {
     nombre: "Lachucholie",
@@ -881,8 +876,8 @@ const usuariosNexo = [
   },
   {
     nombre: "neeusgoomiiis",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Neeusgoomiiis.png"
   },
   {
     nombre: "Nehuen",
@@ -976,8 +971,8 @@ const usuariosNexo = [
   },
   {
     nombre: "raquelvete",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Raquelvete.mp4"
   },
   {
     nombre: "Raul",
@@ -1238,5 +1233,15 @@ const usuariosNexo = [
     nombre: "Omar",
     estado: "activo",
     url_captura: "Capturas/Omar.mp4"
+  },
+  {
+    nombre: "_laabluue._",
+    estado: "activo",
+    url_captura: "Capturas/_laabluue._.png"
+  },
+  {
+    nombre: "♫♪𝓓𝓮𝔂𝓒𝓗𝓙♪♫ ",
+    estado: "activo",
+    url_captura: "Capturas/♫♪𝓓𝓮𝔂𝓒𝓗𝓙♪♫ .png"
   }
 ];
