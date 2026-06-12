@@ -79,6 +79,9 @@ foreach ($user in $usuarios) {
         $user.estado = "activo"
         $user.url_captura = $activeFiles[$usernameLower].Path
         $matchedKeys += $usernameLower
+    } elseif ($user.url_captura -eq "" -and $user.estado -eq "activo") {
+        # Mantener activo si no tiene captura física pero ya está marcado como activo en data.js
+        $matchedKeys += $usernameLower
     } else {
         $user.estado = "suspendido"
         $user.url_captura = ""

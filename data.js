@@ -855,13 +855,18 @@ const usuariosNexo = [
     url_captura: ""
   },
   {
+    nombre: "Mijail",
+    estado: "activo",
+    url_captura: ""
+  },
+  {
     nombre: "Nagisa_shiota295",
     estado: "suspendido",
     url_captura: ""
   },
   {
     nombre: "Nahuel159",
-    estado: "suspendido",
+    estado: "activo",
     url_captura: ""
   },
   {
