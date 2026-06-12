@@ -1,4 +1,5 @@
 # Script de Sincronización de Capturas (PowerShell Nativo)
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $PSScriptRoot = Split-Path -Parent -Path $MyInvocation.MyCommand.Definition
 
 $capturasPath = Join-Path $PSScriptRoot "Capturas"
