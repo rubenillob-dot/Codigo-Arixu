@@ -295,6 +295,11 @@ const usuariosNexo = [
     url_captura: ""
   },
   {
+    nombre: "Cesar_161",
+    estado: "activo",
+    url_captura: "Capturas/Cesar_161.png"
+  },
+  {
     nombre: "Cguerra27",
     estado: "suspendido",
     url_captura: ""
@@ -443,6 +448,11 @@ const usuariosNexo = [
     nombre: "FerdinangVR46",
     estado: "suspendido",
     url_captura: ""
+  },
+  {
+    nombre: "Fernandinho",
+    estado: "activo",
+    url_captura: "Capturas/Fernandinho.png"
   },
   {
     nombre: "fole_10",
@@ -615,6 +625,11 @@ const usuariosNexo = [
     url_captura: ""
   },
   {
+    nombre: "Juandi",
+    estado: "activo",
+    url_captura: ""
+  },
+  {
     nombre: "Juanm",
     estado: "suspendido",
     url_captura: ""
@@ -751,8 +766,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Lusanito121212",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Lusanito121212.png"
   },
   {
     nombre: "Maeztu95",
@@ -1158,6 +1173,11 @@ const usuariosNexo = [
     nombre: "X Ξ N Θ ツ",
     estado: "activo",
     url_captura: "Capturas/X Ξ N Θ ツ.mp4"
+  },
+  {
+    nombre: "xSada17",
+    estado: "activo",
+    url_captura: "Capturas/xSada17.png"
   },
   {
     nombre: "XxdanixXel",
