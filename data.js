@@ -12,7 +12,7 @@ const usuariosNexo = [
   {
     nombre: "_laabluue._",
     estado: "activo",
-    url_captura: "Capturas/_laabluue._.png"
+    url_captura: "Capturas/_laabluue._.jpg"
   },
   {
     nombre: "★agus★",
