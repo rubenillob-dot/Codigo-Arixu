@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // --- VARIABLES DE ESTADO ---
   const TARGET_GOAL = 300;
+  const MANUAL_ACTIVE_COUNT = 177; // Establecer en null para usar el conteo real de data.js
   
   // --- INICIALIZACIÓN ---
   initApp();
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const activeUsers = usuariosNexo.filter(u => u.estado === 'activo');
     const suspendedUsers = usuariosNexo.filter(u => u.estado === 'suspendido');
     
-    const activeCount = activeUsers.length;
+    const activeCount = MANUAL_ACTIVE_COUNT !== null ? MANUAL_ACTIVE_COUNT : activeUsers.length;
     
     // 3. Renderizar cuadrícula de Activos
     if (activeUsers.length === 0) {
