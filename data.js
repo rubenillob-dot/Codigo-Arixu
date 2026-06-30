@@ -10,11 +10,6 @@
 
 const usuariosNexo = [
   {
-    nombre: "_laabluue._",
-    estado: "activo",
-    url_captura: "Capturas/_laabluue._.jpg"
-  },
-  {
     nombre: "★agus★",
     estado: "activo",
     url_captura: "Capturas/★agus★.jpg"
@@ -226,8 +221,8 @@ const usuariosNexo = [
   },
   {
     nombre: "LuanGamer",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/LuanGamer.mp4"
   },
   {
     nombre: "Lucas",
@@ -747,6 +742,31 @@ const usuariosNexo = [
   {
     nombre: "丂ムひᄃリ",
     estado: "suspendido",
+    url_captura: ""
+  },
+  {
+    nombre: "Sleazzy",
+    estado: "activo",
+    url_captura: "Capturas/Sleazzy.jpg"
+  },
+  {
+    nombre: "Dahto1210",
+    estado: "activo",
+    url_captura: "Capturas/Dahto1210.jpg"
+  },
+  {
+    nombre: "Juljim400",
+    estado: "activo",
+    url_captura: "Capturas/Juljim400.jpg"
+  },
+  {
+    nombre: "laabluue",
+    estado: "activo",
+    url_captura: "Capturas/laabluue.jpg"
+  },
+  {
+    nombre: "Emanuel",
+    estado: "activo",
     url_captura: ""
   }
 ];
