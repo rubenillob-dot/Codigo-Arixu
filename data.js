@@ -753,5 +753,10 @@ const usuariosNexo = [
     nombre: "Emanuel",
     estado: "activo",
     url_captura: ""
+  },
+  {
+    nombre: "Agustina",
+    estado: "activo",
+    url_captura: "Capturas/Agustina.jpg"
   }
 ];

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // --- VARIABLES DE ESTADO ---
   const TARGET_GOAL = 300;
-  const MANUAL_ACTIVE_COUNT = 268; // Establecer en null para usar el conteo real de data.js
+  const MANUAL_ACTIVE_COUNT = 269; // Establecer en null para usar el conteo real de data.js
   
   // --- INICIALIZACIÓN ---
   initApp();
