@@ -55,11 +55,6 @@ const usuariosNexo = [
     url_captura: "Capturas/Ferdinang.png"
   },
   {
-    nombre: "FerdinangVR46",
-    estado: "suspendido",
-    url_captura: ""
-  },
-  {
     nombre: "Fernandinho",
     estado: "activo",
     url_captura: "Capturas/Fernandinho.png"
@@ -121,16 +116,6 @@ const usuariosNexo = [
   },
   {
     nombre: "ITZBRAULIOXD",
-    estado: "suspendido",
-    url_captura: ""
-  },
-  {
-    nombre: "Ivaan",
-    estado: "suspendido",
-    url_captura: ""
-  },
-  {
-    nombre: "Iván",
     estado: "suspendido",
     url_captura: ""
   },
