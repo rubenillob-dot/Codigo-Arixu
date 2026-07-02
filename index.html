@@ -128,29 +128,71 @@
       <!-- Cuadrícula de Activos -->
       <div class="grid-section-header">
         <h4>🌟 El Paseo de la Fama <span class="vip-badge-title">VIP ACTIVOS</span></h4>
+        
+        <!-- Extractor de nombres gamer -->
+        <div class="extractor-container">
+          <button id="btn-extraer-nombres" class="btn-extractor-neon">
+            <i class="fa-solid fa-file-export"></i> Extraer Nombres
+          </button>
+          <input type="text" id="nombres-extraidos-input" readonly placeholder="Nombres extraídos..." class="input-extractor-neon">
+          <button id="btn-copiar-nombres" class="btn-extractor-neon">
+            <i class="fa-solid fa-copy"></i> Copiar
+          </button>
+        </div>
       </div>
       <div class="users-grid active-grid" id="active-users-grid">
         <!-- Render dinámico JS -->
       </div>
-    </div>
-  </section>
 
-  <!-- SECCIÓN 3: BLOQUE DE CADUCADOS (ZONA DE RENOVACIÓN) -->
-  <section id="zona-renovacion" class="renovacion-section">
-    <div class="container">
-      <div class="renovacion-container-box">
-        <div class="renovacion-title-box">
-          <h3><i class="fa-solid fa-clock-rotate-left"></i> Pendientes de Renovación</h3>
-          <p class="renovacion-message">
-            ⚠️ Han pasado 14 días y Epic Games ha borrado vuestro código. ¡Volved a poner <span class="highlight-code">ARIXU</span> en la tienda y pasad captura por Discord para volver a la Meta Central y seguir sumando!
-          </p>
+      <!-- SECCIÓN DE LA RULETA DE LA FORTUNA GAMER -->
+      <div class="ruleta-seccion-container">
+        <div class="ruleta-titulo-cabecera">
+          <h3><i class="fa-solid fa-gamepad fa-spin-slow"></i> RULETA DE LA FORTUNA</h3>
+          <p>Sorteo interactivo entre todos los creadores activos del Paseo de la Fama</p>
         </div>
-        
-        <!-- Cuadrícula de Inactivos -->
-        <div class="users-grid suspended-grid" id="suspended-users-grid">
-          <!-- Render dinámico JS -->
+
+        <div class="ruleta-estructura-grid">
+          <!-- Contenedor de la Ruleta (Visual) -->
+          <div class="ruleta-visual-wrapper">
+            <div class="ruleta-indicador-aguja"></div>
+            <canvas id="ruleta-canvas" width="500" height="500"></canvas>
+            <div class="ruleta-pin-central">
+              <span>ARI</span>
+            </div>
+          </div>
+
+          <!-- Panel de Control y Resultados -->
+          <div class="ruleta-panel-control">
+            <div class="ruleta-resultado-box" id="ruleta-resultado-box">
+              <div class="resultado-etiqueta">¿Quién será el afortunado?</div>
+              <div class="resultado-nombre" id="resultado-nombre">-</div>
+            </div>
+
+            <!-- Caja dinámica de sector actual -->
+            <div class="ruleta-sector-actual-box">
+              <div class="sector-actual-label">SECTOR ACTUAL:</div>
+              <div class="sector-actual-nombre" id="sector-actual-nombre">-</div>
+            </div>
+
+            <!-- Módulo Inyector Manual -->
+            <div class="ruleta-inyector-box">
+              <textarea id="ruleta-nombres-input" placeholder="Pega los nombres aquí (separados por comas)..." class="textarea-inyector-neon"></textarea>
+              <button id="btn-cargar-ruleta" class="btn-cargar-neon">
+                <i class="fa-solid fa-cloud-arrow-up"></i> Cargar Ruleta
+              </button>
+            </div>
+
+            <button id="btn-girar-ruleta" class="btn-girar-ruleta-gamer">
+              <i class="fa-solid fa-dice"></i> GIRAR RULETA
+            </button>
+
+            <div class="ruleta-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-users"></i> Activos: <strong id="ruleta-contador-activos">0</strong></span>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -179,7 +221,7 @@
 
         <!-- Tarjeta de Premio 2 -->
         <div class="reward-card locked" id="reward-card-2">
-          <div class="reward-card-badge">Lote Fortnite</div>
+          <div class="reward-card-badge">Skin Especial 2</div>
           <div class="reward-card-visual">
             <i class="fa-solid fa-gift gift-icon"></i>
             <div class="lock-circle"><i class="fa-solid fa-lock"></i></div>
@@ -190,7 +232,7 @@
 
         <!-- Tarjeta de Premio 3 -->
         <div class="reward-card locked" id="reward-card-3">
-          <div class="reward-card-badge">Premio Gordo</div>
+          <div class="reward-card-badge">Skin Especial 3</div>
           <div class="reward-card-visual">
             <i class="fa-solid fa-gift gift-icon"></i>
             <div class="lock-circle"><i class="fa-solid fa-lock"></i></div>
