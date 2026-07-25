@@ -126,8 +126,8 @@ const usuariosNexo = [
   },
   {
     nombre: "ivanft84",
-    estado: "activo",
-    url_captura: "Capturas/Ivanft84.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Ivanrs99",
@@ -831,12 +831,12 @@ const usuariosNexo = [
   },
   {
     nombre: "labluue",
-    estado: "activo",
-    url_captura: "Capturas/labluue.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Rubencillo",
-    estado: "activo",
-    url_captura: "Capturas/Rubencillo.jpg"
+    estado: "suspendido",
+    url_captura: ""
   }
 ];
