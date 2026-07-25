@@ -2,37 +2,42 @@
    OPERACIÓN: CÓDIGO ARIXU - HOJA DE ESTILOS DEFINITIVA PREMIUM
    ========================================================================== */
 
-/* Variables de Diseño */
+/* Variables de Diseño - Tema Morado Twitch Gamer & Descanso Visual */
 :root {
-  --bg-main: #06030e; /* Mucho más oscuro, fondo de espacio profundo */
-  --bg-dark: #020104;  /* Abismo negro ultra-oscuro */
-  --bg-glass: rgba(12, 6, 26, 0.75); /* Vidrio gamer oscuro */
-  --bg-glass-hover: rgba(22, 10, 46, 0.9);
+  --bg-main: #0f0e17; /* Violeta oscuro suave Twitch (evita cansancio visual) */
+  --bg-dark: #0a0814;  /* Abismo violeta elegante */
+  --bg-glass: rgba(28, 22, 54, 0.85); /* Tarjetas vidrio morado Twitch */
+  --bg-glass-hover: rgba(45, 36, 85, 0.95);
   
-  /* Neones de la Web - Desaturados y Suaves para reducir fatiga visual */
-  --neon-cyan: #4d9093; /* Verde azulado apagado (Teal apagado) */
-  --neon-cyan-glow: rgba(77, 144, 147, 0.35);
-  --neon-purple: #8f7ea6; /* Amatista apagado / desaturado */
-  --neon-purple-glow: rgba(143, 126, 166, 0.35);
-  --neon-green: #689c83; /* Verde apagado */
-  --neon-green-glow: rgba(104, 156, 131, 0.35);
-  --neon-orange: #b07d62; /* Naranja/marrón apagado */
-  --neon-orange-glow: rgba(176, 125, 98, 0.35);
-  --neon-gold: #c0a678; /* Oro apagado / bronce */
-  --neon-gold-glow: rgba(192, 166, 120, 0.35);
+  /* Púrpura Twitch Oficial y Neones Llamativos */
+  --twitch-purple: #9146FF; /* Morado Twitch emblemático */
+  --twitch-purple-dark: #772CE8;
+  --twitch-purple-light: #A970FF;
+  --twitch-purple-glow: rgba(145, 70, 255, 0.5);
+
+  --neon-purple: #9146FF;
+  --neon-purple-glow: rgba(145, 70, 255, 0.5);
+  --neon-cyan: #00f0ff; /* Cían vibrante */
+  --neon-cyan-glow: rgba(0, 240, 255, 0.45);
+  --neon-green: #00ff88; /* Verde esmeralda vivo */
+  --neon-green-glow: rgba(0, 255, 136, 0.45);
+  --neon-orange: #ff6b35; /* Naranja neón */
+  --neon-orange-glow: rgba(255, 107, 53, 0.45);
+  --neon-gold: #ffd700; /* Oro radiante */
+  --neon-gold-glow: rgba(255, 215, 0, 0.45);
   
-  --border-cyan: rgba(77, 144, 147, 0.35);
-  --border-purple: rgba(143, 126, 166, 0.35);
-  --border-orange: rgba(255, 85, 0, 0.3);
-  --border-green: rgba(0, 255, 136, 0.35);
+  --border-cyan: rgba(0, 240, 255, 0.45);
+  --border-purple: rgba(145, 70, 255, 0.45);
+  --border-orange: rgba(255, 107, 53, 0.45);
+  --border-green: rgba(0, 255, 136, 0.45);
   
   /* Colores para Zona de Suspendidos */
-  --bg-suspended-card: rgba(15, 8, 5, 0.5);
-  --border-suspended: rgba(255, 85, 0, 0.25);
+  --bg-suspended-card: rgba(26, 16, 38, 0.7);
+  --border-suspended: rgba(255, 107, 53, 0.35);
   
-  /* Colores de Texto */
+  /* Colores de Texto (Máximo contraste y claridad) */
   --text-main: #ffffff;
-  --text-muted: #a3aabf;
+  --text-muted: #c7cbdf;
   
   /* Tipografías */
   --font-gaming: 'Orbitron', sans-serif;
@@ -70,7 +75,7 @@ body {
   padding: 0 20px;
 }
 
-/* --- FONDO ANIMADO ESPACIO PROFUNDO --- */
+/* --- FONDO ANIMADO TWITCH VIOLETA --- */
 .stars-bg {
   position: fixed;
   top: 0;
@@ -79,7 +84,7 @@ body {
   height: 100%;
   z-index: -3;
   background-color: var(--bg-main);
-  background-image: radial-gradient(circle at 50% 50%, #361f70 0%, transparent 70%);
+  background-image: radial-gradient(circle at 50% 30%, #5821a8 0%, #0f0e17 80%);
   background-size: 200% 200%;
   background-position: center;
   animation: glowShift 18s ease-in-out infinite alternate;
@@ -104,8 +109,8 @@ body {
   width: 100%;
   height: 100%;
   z-index: -2;
-  background: radial-gradient(circle at 80% 20%, rgba(157, 78, 221, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 20% 80%, rgba(0, 240, 255, 0.08) 0%, transparent 50%);
+  background: radial-gradient(circle at 80% 20%, rgba(145, 70, 255, 0.2) 0%, transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(0, 240, 255, 0.18) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -123,32 +128,32 @@ body {
 .space-bubble {
   position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.15;
+  filter: blur(90px);
+  opacity: 0.25;
 }
 
 .sp-1 {
-  width: 450px;
-  height: 450px;
-  background: var(--neon-cyan);
+  width: 480px;
+  height: 480px;
+  background: var(--twitch-purple);
   top: -5%;
   left: -10%;
   animation: floatSpace 15s infinite alternate;
 }
 
 .sp-2 {
-  width: 500px;
-  height: 500px;
-  background: var(--neon-purple);
+  width: 520px;
+  height: 520px;
+  background: var(--neon-cyan);
   bottom: -10%;
   right: -5%;
   animation: floatSpace 20s infinite alternate-reverse;
 }
 
 .sp-3 {
-  width: 350px;
-  height: 350px;
-  background: var(--neon-green);
+  width: 380px;
+  height: 380px;
+  background: var(--twitch-purple-dark);
   top: 45%;
   left: 40%;
   animation: floatSpace 18s infinite alternate;
@@ -218,47 +223,48 @@ body {
 }
 
 .twitch-badge {
-  background: #6441a5;
+  background: linear-gradient(135deg, #9146FF 0%, #772CE8 100%);
   color: white;
   font-family: var(--font-gaming);
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 4px 12px;
-  border-radius: 4px;
+  padding: 6px 16px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 15px;
-  box-shadow: 0 0 15px rgba(100, 65, 165, 0.4);
+  margin-bottom: 18px;
+  box-shadow: 0 0 20px rgba(145, 70, 255, 0.65);
 }
 
 .live-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #ff3838;
+  width: 9px;
+  height: 9px;
+  background-color: #ff2a6d;
   border-radius: 50%;
+  box-shadow: 0 0 10px #ff2a6d;
   animation: livePulse 1.2s infinite;
 }
 
 @keyframes livePulse {
-  0% { transform: scale(0.8); opacity: 0.5; }
+  0% { transform: scale(0.8); opacity: 0.6; }
   50% { transform: scale(1.3); opacity: 1; }
-  100% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(0.8); opacity: 0.6; }
 }
 
 .brand h1 {
   font-family: var(--font-gaming);
-  font-size: 2.8rem;
+  font-size: 2.9rem;
   font-weight: 900;
   letter-spacing: 2px;
-  text-shadow: 0 0 20px rgba(157, 78, 221, 0.4);
+  text-shadow: 0 0 25px rgba(145, 70, 255, 0.5);
 }
 
 .brand h1 span {
-  color: var(--neon-cyan);
-  text-shadow: 0 0 20px var(--neon-cyan-glow);
+  color: #A970FF;
+  text-shadow: 0 0 25px rgba(169, 112, 255, 0.8);
 }
 
 .hero-title {
@@ -271,28 +277,28 @@ body {
 }
 
 .highlight-text {
-  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+  background: linear-gradient(90deg, #A970FF, #00f0ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.2));
+  filter: drop-shadow(0 0 15px rgba(145, 70, 255, 0.4));
 }
 
 .hero-subtitle {
   color: var(--text-muted);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   max-width: 750px;
   margin: 0 auto 40px auto;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .code-badge {
-  background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan));
-  color: var(--bg-dark);
+  background: linear-gradient(135deg, #9146FF, #00f0ff);
+  color: #ffffff;
   font-family: var(--font-gaming);
   font-weight: 900;
-  padding: 3px 14px;
+  padding: 4px 16px;
   border-radius: 6px;
-  box-shadow: 0 0 20px var(--neon-cyan-glow);
+  box-shadow: 0 0 20px rgba(145, 70, 255, 0.6);
   display: inline-block;
 }
 
@@ -303,28 +309,22 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Botones */
+/* Botones Morados Twitch Gamer */
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 12px;
   font-family: var(--font-gaming);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   padding: 16px 36px;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition-normal);
-  
-  /* Borde RGB animado por defecto */
-  border: 2px solid transparent !important;
-  background: linear-gradient(#120924, #120924) padding-box,
-              linear-gradient(90deg, #ff0055, #bd00ff, #00f3ff, #00ff88, #ff5500, #ff0055) border-box !important;
-  background-size: 300% 300% !important;
-  animation: rgb-rainbow 8s linear infinite;
+  border: none !important;
 }
 
 .hero-actions {
@@ -336,30 +336,28 @@ body {
 
 .btn-primary {
   color: #ffffff;
-  background: linear-gradient(#002c18, #002c18) padding-box,
-              linear-gradient(90deg, #ff0055, #bd00ff, #00f3ff, #00ff88, #ff5500, #ff0055) border-box !important;
-  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4);
+  background: linear-gradient(135deg, #9146FF 0%, #772CE8 100%) !important;
+  box-shadow: 0 6px 25px rgba(145, 70, 255, 0.55);
 }
 
 .btn-primary:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 35px var(--neon-green);
-  animation: rgb-rainbow 3s linear infinite; /* Acelera al pasar el ratón */
+  box-shadow: 0 0 35px rgba(145, 70, 255, 0.85);
+  background: linear-gradient(135deg, #772CE8 0%, #9146FF 100%) !important;
 }
 
 .btn-secondary {
-  color: var(--text-main);
-  background: linear-gradient(#0c061a, #0c061a) padding-box,
-              linear-gradient(90deg, #ff0055, #bd00ff, #00f3ff, #00ff88, #ff5500, #ff0055) border-box !important;
-  box-shadow: 0 4px 20px rgba(0, 243, 255, 0.2);
+  color: #ffffff;
+  background: linear-gradient(135deg, #251648 0%, #150e2a 100%) !important;
+  border: 1px solid rgba(145, 70, 255, 0.5) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(#140b2b, #140b2b) padding-box,
-              linear-gradient(90deg, #ff0055, #bd00ff, #00f3ff, #00ff88, #ff5500, #ff0055) border-box !important;
-  box-shadow: 0 0 25px var(--neon-cyan);
+  background: rgba(145, 70, 255, 0.25) !important;
+  border-color: #A970FF !important;
+  box-shadow: 0 0 30px rgba(145, 70, 255, 0.6);
   transform: translateY(-4px);
-  animation: rgb-rainbow 3s linear infinite;
 }
 
 /* --- SECCIONES: COMÚN --- */
@@ -537,13 +535,13 @@ body {
 }
 
 .dashboard-card {
-  background: rgba(12, 6, 26, 0.6);
+  background: rgba(22, 16, 48, 0.85);
   border: 1px solid var(--border-purple);
   border-radius: 20px;
   padding: 40px;
   margin-bottom: 60px;
   backdrop-filter: blur(16px) saturate(180%);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(145, 70, 255, 0.15);
   position: relative;
 }
 
@@ -825,14 +823,14 @@ body {
   text-shadow: 0 0 12px var(--neon-cyan);
 }
 
-/* --- RULETA DE LA FORTUNA GAMER UI/UX --- */
+/* --- RULETA DE LA FORTUNA GAMER UI/UX (TEMA TWITCH MORADO) --- */
 .ruleta-seccion-container {
-  background: rgba(10, 5, 22, 0.7);
-  border: 1px solid rgba(0, 243, 255, 0.2);
+  background: rgba(22, 16, 48, 0.85);
+  border: 1px solid rgba(145, 70, 255, 0.35);
   border-radius: 24px;
   padding: 40px;
   margin-top: 50px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 30px rgba(176, 38, 255, 0.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 40px rgba(145, 70, 255, 0.1);
   backdrop-filter: blur(20px);
   position: relative;
   overflow: hidden;
@@ -844,8 +842,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-purple), transparent);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #9146FF, var(--neon-cyan), transparent);
 }
 
 .ruleta-titulo-cabecera {
@@ -863,17 +861,17 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  text-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+  text-shadow: 0 0 18px rgba(145, 70, 255, 0.5);
 }
 
 .ruleta-titulo-cabecera h3 i {
-  color: var(--neon-cyan);
-  text-shadow: 0 0 10px var(--neon-cyan-glow);
+  color: #A970FF;
+  text-shadow: 0 0 15px rgba(169, 112, 255, 0.8);
 }
 
 .ruleta-titulo-cabecera p {
   color: var(--text-muted);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin-top: 8px;
 }
 
@@ -893,9 +891,9 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(4, 2, 8, 0.6);
-  border: 4px double rgba(176, 38, 255, 0.25);
-  box-shadow: 0 0 40px rgba(0, 243, 255, 0.1), inset 0 0 30px rgba(176, 38, 255, 0.15);
+  background: rgba(18, 12, 40, 0.85);
+  border: 4px double rgba(145, 70, 255, 0.45);
+  box-shadow: 0 0 45px rgba(145, 70, 255, 0.35), inset 0 0 30px rgba(145, 70, 255, 0.2);
   padding: 8px;
 }
 
@@ -914,9 +912,9 @@ body {
   height: 0;
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
-  border-top: 26px solid #ff007f; /* Magenta neon */
+  border-top: 28px solid #9146FF; /* Morado Twitch */
   z-index: 10;
-  filter: drop-shadow(0 0 8px rgba(255, 0, 127, 0.8));
+  filter: drop-shadow(0 0 12px rgba(145, 70, 255, 0.95));
 }
 
 .ruleta-pin-central {
@@ -924,13 +922,13 @@ body {
   width: 76px;
   height: 76px;
   border-radius: 50%;
-  background: #020104;
-  border: 4px solid var(--neon-cyan);
+  background: #0f0e17;
+  border: 4px solid #9146FF;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 5;
-  box-shadow: 0 0 20px var(--neon-cyan-glow), inset 0 0 10px rgba(0, 243, 255, 0.4);
+  box-shadow: 0 0 22px rgba(145, 70, 255, 0.7), inset 0 0 10px rgba(145, 70, 255, 0.5);
 }
 
 .ruleta-pin-central span {
@@ -947,10 +945,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  background: rgba(4, 2, 8, 0.5);
+  background: rgba(14, 9, 32, 0.75);
   padding: 35px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(145, 70, 255, 0.25);
   align-items: center;
 }
 
@@ -959,8 +957,8 @@ body {
   text-align: center;
   padding: 25px 20px;
   border-radius: 14px;
-  background: rgba(2, 1, 4, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.03);
+  background: rgba(24, 16, 52, 0.7);
+  border: 1px solid rgba(145, 70, 255, 0.25);
   position: relative;
   transition: all 0.4s ease;
 }
@@ -984,8 +982,8 @@ body {
 
 .ruleta-resultado-box.activo {
   border-color: var(--neon-green);
-  box-shadow: 0 0 25px rgba(0, 255, 136, 0.15);
-  background: rgba(0, 255, 136, 0.02);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.25);
+  background: rgba(0, 255, 136, 0.05);
 }
 
 .ruleta-resultado-box.activo .resultado-nombre {
@@ -1003,8 +1001,8 @@ body {
   text-align: center;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(2, 1, 4, 0.4);
-  border: 1px dashed rgba(255, 255, 255, 0.05);
+  background: rgba(24, 16, 52, 0.6);
+  border: 1px dashed rgba(145, 70, 255, 0.3);
   margin-top: -10px;
 }
 
@@ -1020,8 +1018,8 @@ body {
   font-family: var(--font-gaming);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--neon-cyan);
-  text-shadow: 0 0 8px var(--neon-cyan-glow);
+  color: #A970FF;
+  text-shadow: 0 0 10px rgba(169, 112, 255, 0.8);
 }
 
 /* --- EXTRACTOR DE NOMBRES --- */
@@ -1038,8 +1036,8 @@ body {
   font-size: 0.85rem;
   font-weight: 700;
   color: #fff;
-  background: rgba(10, 5, 22, 0.6);
-  border: 1px solid var(--border-cyan);
+  background: rgba(35, 22, 75, 0.75);
+  border: 1px solid rgba(145, 70, 255, 0.5);
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -1047,21 +1045,21 @@ body {
   align-items: center;
   gap: 6px;
   transition: var(--transition-fast);
-  box-shadow: 0 0 10px rgba(0, 243, 255, 0.05);
+  box-shadow: 0 0 10px rgba(145, 70, 255, 0.15);
 }
 
 .btn-extractor-neon:hover {
-  background: rgba(0, 243, 255, 0.1);
-  box-shadow: 0 0 15px rgba(0, 243, 255, 0.25);
-  border-color: var(--neon-cyan);
+  background: rgba(145, 70, 255, 0.35);
+  box-shadow: 0 0 20px rgba(145, 70, 255, 0.5);
+  border-color: #A970FF;
 }
 
 .input-extractor-neon {
   font-family: var(--font-text);
   font-size: 0.95rem;
   color: #fff;
-  background: rgba(2, 1, 4, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(15, 10, 32, 0.8);
+  border: 1px solid rgba(145, 70, 255, 0.3);
   border-radius: 8px;
   padding: 8px 12px;
   width: 250px;
@@ -1071,8 +1069,8 @@ body {
 }
 
 .input-extractor-neon:focus {
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 12px rgba(0, 243, 255, 0.15), inset 0 0 8px rgba(0, 0, 0, 0.5);
+  border-color: #A970FF;
+  box-shadow: 0 0 12px rgba(145, 70, 255, 0.4), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 /* --- INYECTOR DE NOMBRES RULETA --- */
@@ -1090,8 +1088,8 @@ body {
   font-family: var(--font-text);
   font-size: 0.95rem;
   color: #fff;
-  background: rgba(2, 1, 4, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(15, 10, 32, 0.8);
+  border: 1px solid rgba(145, 70, 255, 0.3);
   border-radius: 10px;
   padding: 12px;
   outline: none;
@@ -1101,8 +1099,8 @@ body {
 }
 
 .textarea-inyector-neon:focus {
-  border-color: #ff007f;
-  box-shadow: 0 0 12px rgba(255, 0, 127, 0.15), inset 0 0 8px rgba(0, 0, 0, 0.5);
+  border-color: #9146FF;
+  box-shadow: 0 0 15px rgba(145, 70, 255, 0.4), inset 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .btn-cargar-neon {
@@ -1110,8 +1108,8 @@ body {
   font-size: 0.95rem;
   font-weight: 700;
   color: #fff;
-  background: rgba(20, 5, 15, 0.6);
-  border: 1px solid rgba(255, 0, 127, 0.4);
+  background: rgba(35, 22, 75, 0.75);
+  border: 1px solid rgba(145, 70, 255, 0.5);
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
@@ -1120,13 +1118,13 @@ body {
   justify-content: center;
   gap: 8px;
   transition: var(--transition-fast);
-  box-shadow: 0 0 10px rgba(255, 0, 127, 0.05);
+  box-shadow: 0 0 10px rgba(145, 70, 255, 0.15);
 }
 
 .btn-cargar-neon:hover {
-  background: rgba(255, 0, 127, 0.15);
-  box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);
-  border-color: #ff007f;
+  background: rgba(145, 70, 255, 0.35);
+  box-shadow: 0 0 20px rgba(145, 70, 255, 0.5);
+  border-color: #A970FF;
 }
 
 .btn-girar-ruleta-gamer {
@@ -1135,12 +1133,12 @@ body {
   font-size: 1.35rem;
   font-weight: 900;
   color: #fff;
-  background: linear-gradient(135deg, #00f3ff, #ff007f);
+  background: linear-gradient(135deg, #9146FF, #772CE8, #00f0ff);
   border: none;
   border-radius: 12px;
   padding: 18px 30px;
   cursor: pointer;
-  box-shadow: 0 0 20px rgba(255, 0, 127, 0.25);
+  box-shadow: 0 0 25px rgba(145, 70, 255, 0.55);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: flex;
   align-items: center;
@@ -1150,8 +1148,8 @@ body {
 
 .btn-girar-ruleta-gamer:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(0, 243, 255, 0.4), 0 0 20px rgba(255, 0, 127, 0.4);
-  background: linear-gradient(135deg, #ff007f, #00f3ff);
+  box-shadow: 0 0 35px rgba(145, 70, 255, 0.85);
+  background: linear-gradient(135deg, #772CE8, #9146FF, #00f0ff);
 }
 
 .btn-girar-ruleta-gamer:active {
@@ -1220,7 +1218,7 @@ body {
 
 /* Tarjeta Recompensa */
 .reward-card {
-  background: rgba(12, 7, 26, 0.7);
+  background: rgba(24, 17, 52, 0.85);
   border: 1px solid var(--border-purple);
   border-radius: 18px;
   padding: 45px 30px;
@@ -1228,7 +1226,7 @@ body {
   position: relative;
   backdrop-filter: blur(18px);
   transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(145, 70, 255, 0.15);
 }
 
 /* Bloqueado por Defecto */

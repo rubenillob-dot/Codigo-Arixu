@@ -26,16 +26,16 @@ function startApp() {
   var animationId = null;
 
   var wheelColors = [
-    "#4d9093", // Soft Teal
-    "#8f7ea6", // Soft Amethyst
-    "#689c83", // Soft Green
-    "#b07d62", // Soft Orange
-    "#c0a678"  // Soft Gold
+    "#9146FF", // Morado Twitch Emblemático
+    "#00F0FF", // Cían Neón Vibrante
+    "#772CE8", // Violeta Twitch Profundo
+    "#A970FF", // Morado Twitch Brillante
+    "#00FF88"  // Verde Neón Esmeralda
   ];
   
   // --- VARIABLES DE ESTADO ---
   var TARGET_GOAL = 300;
-  var MANUAL_ACTIVE_COUNT = 25; // Conteo manual para pruebas / inicio de mes
+  var MANUAL_ACTIVE_COUNT = 250; // Conteo manual para pruebas / inicio de mes
   
   // --- EXTRACTOR E INYECTOR MANUAL DE LA RULETA ---
   var btnExtraer = document.getElementById("btn-extraer-nombres");
