@@ -127,7 +127,7 @@ const usuariosNexo = [
   {
     nombre: "ivanft84",
     estado: "activo",
-    url_captura: "Capturas/Ivanft84.mp4"
+    url_captura: "Capturas/Ivanft84.jpg"
   },
   {
     nombre: "Ivanrs99",
@@ -821,12 +821,22 @@ const usuariosNexo = [
   },
   {
     nombre: "_laabluue",
-    estado: "activo",
-    url_captura: "Capturas/_laabluue.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Kirito_Kayu",
     estado: "activo",
     url_captura: "Capturas/Kirito_Kayu.jpg"
+  },
+  {
+    nombre: "labluue",
+    estado: "activo",
+    url_captura: "Capturas/labluue.jpg"
+  },
+  {
+    nombre: "Rubencillo",
+    estado: "activo",
+    url_captura: "Capturas/Rubencillo.jpg"
   }
 ];
