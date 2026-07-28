@@ -21,6 +21,7 @@ function startApp() {
   var participantCountEl = document.getElementById("ruleta-contador-activos");
 
   var activeParticipants = [];
+  var assignedWinners = [];
   var currentAngle = 0; // en radianes
   var isSpinning = false;
   var animationId = null;
@@ -37,6 +38,14 @@ function startApp() {
   var TARGET_GOAL = 300;
   var MANUAL_ACTIVE_COUNT = 301; // Conteo manual para pruebas / inicio de mes
   
+  // --- BOTÓN DE REINICIAR GANADORES DE SKINS ---
+  var btnResetGanadores = document.getElementById("btn-reset-ganadores");
+  if (btnResetGanadores) {
+    btnResetGanadores.addEventListener("click", function() {
+      resetWinners();
+    });
+  }
+
   // --- EXTRACTOR E INYECTOR MANUAL DE LA RULETA ---
   var btnExtraer = document.getElementById("btn-extraer-nombres");
   var inputExtraidos = document.getElementById("nombres-extraidos-input");
@@ -477,6 +486,9 @@ function startApp() {
         }
         if (nameEl) nameEl.textContent = winner.nombre;
 
+        // Asignar ganador a la tarjeta de Skin Especial correspondiente
+        assignWinnerToReward(winner);
+
         startConfetti();
         setTimeout(function() {
           if (!isSpinning) {
@@ -533,6 +545,72 @@ function startApp() {
   function getWinner() {
     var idx = getWinnerIndex();
     return activeParticipants[idx];
+  }
+
+  // --- ASIGNACIÓN DE GANADORES A SKINS DE RECOMPENSA ---
+  function assignWinnerToReward(winner) {
+    if (!winner) return;
+    assignedWinners.push(winner);
+
+    var slotNum = ((assignedWinners.length - 1) % 3) + 1;
+
+    var card = document.getElementById("reward-card-" + slotNum);
+    var badge = document.getElementById("reward-badge-" + slotNum);
+    var icon = document.getElementById("reward-icon-" + slotNum);
+    var title = document.getElementById("reward-title-" + slotNum);
+    var desc = document.getElementById("reward-desc-" + slotNum);
+    var btnReset = document.getElementById("btn-reset-ganadores");
+
+    if (btnReset) btnReset.style.display = "inline-flex";
+
+    if (card) {
+      card.classList.add("assigned-winner-card");
+
+      if (badge) {
+        badge.textContent = "🏆 GANADOR SKIN " + slotNum;
+      }
+
+      if (icon) {
+        icon.className = "fa-solid fa-crown crown-icon";
+      }
+
+      if (title) {
+        title.textContent = winner.nombre;
+      }
+
+      if (desc) {
+        desc.textContent = "¡Ganador/a asignado/a para la Skin Especial " + slotNum + "!";
+      }
+
+      // Desplazamiento suave para enfocar el premio ganado
+      setTimeout(function() {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 900);
+    }
+  }
+
+  function resetWinners() {
+    assignedWinners = [];
+    var btnReset = document.getElementById("btn-reset-ganadores");
+    if (btnReset) btnReset.style.display = "none";
+
+    var i;
+    for (i = 1; i <= 3; i++) {
+      var card = document.getElementById("reward-card-" + i);
+      var badge = document.getElementById("reward-badge-" + i);
+      var icon = document.getElementById("reward-icon-" + i);
+      var title = document.getElementById("reward-title-" + i);
+      var desc = document.getElementById("reward-desc-" + i);
+
+      if (card) card.classList.remove("assigned-winner-card");
+      if (badge) badge.textContent = "Skin Especial " + i;
+      if (icon) icon.className = "fa-solid fa-gift gift-icon";
+      if (title) {
+        var nombresOrd = ["primera", "segunda", "tercera"];
+        title.textContent = "Sorteo de la " + nombresOrd[i - 1] + " skin";
+      }
+      if (desc) desc.textContent = "Se desbloquea al alcanzar los 300 usuarios activos.";
+    }
   }
 }
 

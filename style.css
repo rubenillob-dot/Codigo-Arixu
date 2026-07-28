@@ -1247,6 +1247,86 @@ body {
   opacity: 1;
 }
 
+/* Tarjeta de Ganador Asignado */
+.reward-card.assigned-winner-card {
+  border: 2px solid #ffd700 !important;
+  background: linear-gradient(135deg, rgba(35, 25, 65, 0.95), rgba(255, 215, 0, 0.15)) !important;
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.6), inset 0 0 20px rgba(255, 215, 0, 0.2) !important;
+  animation: winnerCardPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), winnerGlowPulse 2s infinite alternate !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.reward-card.assigned-winner-card .reward-card-badge {
+  background: linear-gradient(90deg, #ffd700, #ff8c00) !important;
+  border-color: #ffd700 !important;
+  color: #0b0719 !important;
+  font-weight: 900 !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8) !important;
+  text-shadow: none !important;
+}
+
+.reward-card.assigned-winner-card .reward-card-visual {
+  border-color: #ffd700 !important;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%) !important;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5) !important;
+  overflow: hidden;
+}
+
+.reward-card.assigned-winner-card .gift-icon,
+.reward-card.assigned-winner-card .crown-icon {
+  color: #ffd700 !important;
+  text-shadow: 0 0 20px #ffd700, 0 0 40px #ff8c00 !important;
+  animation: crownBounce 1.5s infinite alternate !important;
+}
+
+.reward-card.assigned-winner-card h3 {
+  color: #00ff88 !important;
+  font-size: 1.6rem !important;
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.8) !important;
+  margin-top: 5px;
+}
+
+@keyframes winnerCardPop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes winnerGlowPulse {
+  0% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.4); }
+  100% { box-shadow: 0 0 45px rgba(255, 215, 0, 0.8); }
+}
+
+@keyframes crownBounce {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-5px) scale(1.1); }
+}
+
+.btn-reset-neon {
+  font-family: var(--font-gaming);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ff5555;
+  background: rgba(40, 15, 25, 0.8);
+  border: 1px solid rgba(255, 85, 85, 0.4);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition-fast);
+  box-shadow: 0 0 10px rgba(255, 85, 85, 0.15);
+  margin-top: 10px;
+}
+
+.btn-reset-neon:hover {
+  background: rgba(255, 85, 85, 0.25);
+  border-color: #ff5555;
+  box-shadow: 0 0 20px rgba(255, 85, 85, 0.5);
+  color: #fff;
+}
+
 @keyframes rewardUnlockPulse {
   0% { transform: scale(1); box-shadow: 0 0 20px rgba(255, 215, 0, 0.25); }
   100% { transform: scale(1.04); box-shadow: 0 0 45px rgba(255, 215, 0, 0.55); }
