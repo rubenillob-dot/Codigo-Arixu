@@ -838,5 +838,20 @@ const usuariosNexo = [
     nombre: "Rubencillo",
     estado: "suspendido",
     url_captura: ""
+  },
+  {
+    nombre: "omar_52785",
+    estado: "activo",
+    url_captura: "Capturas/omar_52785.mp4"
+  },
+  {
+    nombre: "Parejabluue",
+    estado: "activo",
+    url_captura: "Capturas/Parejabluue.jpg"
+  },
+  {
+    nombre: "Kath",
+    estado: "activo",
+    url_captura: "Capturas/Kath.jpg"
   }
 ];

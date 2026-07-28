@@ -35,7 +35,7 @@ function startApp() {
   
   // --- VARIABLES DE ESTADO ---
   var TARGET_GOAL = 300;
-  var MANUAL_ACTIVE_COUNT = 250; // Conteo manual para pruebas / inicio de mes
+  var MANUAL_ACTIVE_COUNT = 301; // Conteo manual para pruebas / inicio de mes
   
   // --- EXTRACTOR E INYECTOR MANUAL DE LA RULETA ---
   var btnExtraer = document.getElementById("btn-extraer-nombres");
