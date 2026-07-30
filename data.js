@@ -291,8 +291,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Mauj",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Mauj.jpg"
   },
   {
     nombre: "mavericks96_",
