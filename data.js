@@ -1,4 +1,4 @@
-﻿/**
+/**
  * EL NEXO DE ARIXU - BASE DE DATOS DE USUARIOS
  * 
  * Este archivo contiene la lista de usuarios cargados desde Discord y Twitch.
@@ -466,7 +466,7 @@ const usuariosNexo = [
   },
   {
     nombre: "Piyuyin6",
-    estado: "suspendido",
+    estado: "activo",
     url_captura: ""
   },
   {
@@ -476,8 +476,8 @@ const usuariosNexo = [
   },
   {
     nombre: "R3flexction",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/R3flexction.jpg"
   },
   {
     nombre: "raquelvete",
@@ -853,5 +853,15 @@ const usuariosNexo = [
     nombre: "Kath",
     estado: "activo",
     url_captura: "Capturas/Kath.jpg"
+  },
+  {
+    nombre: "Annily",
+    estado: "activo",
+    url_captura: "Capturas/Annily.jpg"
+  },
+  {
+    nombre: "Wertyjal fn",
+    estado: "activo",
+    url_captura: "Capturas/Wertyjal fn.jpg"
   }
 ];
