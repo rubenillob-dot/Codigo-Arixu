@@ -213,7 +213,11 @@ function startApp() {
       rewardsTitle.innerHTML = '<i class="fa-solid fa-trophy" style="color: var(--neon-gold); text-shadow: 0 0 15px var(--neon-gold-glow)"></i> ¡META CONSEGUIDA: RECOMPENSAS DESBLOQUEADAS!';
       rewardsTitle.classList.add("highlight-text");
       rewardsSubtitle.textContent = "¡Felicitaciones a toda la comunidad! Hemos alcanzado los 300 códigos activos. Los sorteos de las 3 Skins están habilitados.";
-      dynamicStatusMessage.innerHTML = '<span class="highlight-text" style="font-size:1.35rem; color: var(--neon-gold); font-family: var(--font-gaming);">🏆 ¡SORTEO DE LAS 3 SKINS DESBLOQUEADO CON ÉXITO! 🏆</span>';
+      dynamicStatusMessage.innerHTML = 
+        '<div class="highlight-text" style="font-size:1.35rem; color: var(--neon-gold); font-family: var(--font-gaming); display: inline-block;">🏆 ¡SORTEO DE LAS 3 SKINS DESBLOQUEADO CON ÉXITO! 🏆</div>' +
+        '<div class="status-announcement-box">' +
+        '  ¡Familia Arixu! 📢 Como sabéis, nuestro código de creador está temporalmente en boxes por un bug del sistema, pero que nadie decaiga porque ¡LO VAMOS A RECUPERAR MUY PRONTO! 🛡️ Ya estamos gestionando todo con soporte para que vuelva a estar activo. Guardad esos paVos y esa energía, porque en cuanto vuelva, lo vamos a celebrar por todo lo alto. ¡Mil gracias por no soltarnos la mano!' +
+        '</div>';
       
       startConfetti();
     } else {

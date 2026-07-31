@@ -1458,6 +1458,21 @@ body {
   box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
 }
 
+.status-announcement-box {
+  margin-top: 15px;
+  padding: 18px 22px;
+  background: rgba(145, 70, 255, 0.12);
+  border: 1px dashed rgba(145, 70, 255, 0.45);
+  border-radius: 12px;
+  font-family: var(--font-main, 'Rajdhani', sans-serif);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  text-align: center;
+  font-weight: 600;
+  box-shadow: inset 0 0 15px rgba(145, 70, 255, 0.1);
+}
+
 .status-highlight {
   background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
   -webkit-background-clip: text;
