@@ -1,4 +1,4 @@
-/**
+﻿/**
  * EL NEXO DE ARIXU - BASE DE DATOS DE USUARIOS
  * 
  * Este archivo contiene la lista de usuarios cargados desde Discord y Twitch.
@@ -21,18 +21,18 @@ const usuariosNexo = [
   },
   {
     nombre: "Bailen",
+    estado: "activo",
+    url_captura: "Capturas/Bailen.jpg"
+  },
+  {
+    nombre: "Cesar_161",
     estado: "suspendido",
     url_captura: ""
   },
   {
-    nombre: "Cesar_161",
-    estado: "activo",
-    url_captura: "Capturas/Cesar_161.jpg"
-  },
-  {
     nombre: "Dharma86",
-    estado: "activo",
-    url_captura: "Capturas/Dharma86.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Erick",
@@ -56,8 +56,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Fernandinho",
-    estado: "activo",
-    url_captura: "Capturas/Fernandinho.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "fole_10",
@@ -137,7 +137,7 @@ const usuariosNexo = [
   {
     nombre: "Jaratos",
     estado: "activo",
-    url_captura: "Capturas/Jaratos.mp4"
+    url_captura: "Capturas/Jaratos.jpg"
   },
   {
     nombre: "Jhn__emma",
@@ -206,8 +206,8 @@ const usuariosNexo = [
   },
   {
     nombre: "LuanGamer",
-    estado: "activo",
-    url_captura: "Capturas/LuanGamer.mp4"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Lucas",
@@ -251,8 +251,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Malbelda15",
-    estado: "activo",
-    url_captura: "Capturas/Malbelda15.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Manimanitas0140",
@@ -291,8 +291,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Mauj",
-    estado: "activo",
-    url_captura: "Capturas/Mauj.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "mavericks96_",
@@ -341,8 +341,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Mr. Flips",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Mr. Flips.jpg"
   },
   {
     nombre: "Mr.Jhon",
@@ -416,8 +416,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Noopolad",
-    estado: "activo",
-    url_captura: "Capturas/Noopolad.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Omar",
@@ -481,8 +481,8 @@ const usuariosNexo = [
   },
   {
     nombre: "raquelvete",
-    estado: "activo",
-    url_captura: "Capturas/raquelvete.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Raul",
@@ -516,8 +516,8 @@ const usuariosNexo = [
   },
   {
     nombre: "rubenillo",
-    estado: "activo",
-    url_captura: "Capturas/Rubenillo.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Ryaaan",
@@ -566,8 +566,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Sito",
-    estado: "activo",
-    url_captura: "Capturas/Sito.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Sneax",
@@ -586,8 +586,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Solovino",
-    estado: "activo",
-    url_captura: "Capturas/Solovino.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "SoOocka",
@@ -666,8 +666,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Valerie Mae",
-    estado: "activo",
-    url_captura: "Capturas/Valerie Mae.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "valoal",
@@ -731,8 +731,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Sleazzy",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Sleazzy.jpg"
   },
   {
     nombre: "Dahto1210",
@@ -761,13 +761,13 @@ const usuariosNexo = [
   },
   {
     nombre: "tantra87",
-    estado: "activo",
-    url_captura: "Capturas/tantra87.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Neus",
     estado: "activo",
-    url_captura: "Capturas/Neus.mp4"
+    url_captura: "Capturas/Neus.jpg"
   },
   {
     nombre: "Jesulito",
@@ -776,48 +776,48 @@ const usuariosNexo = [
   },
   {
     nombre: "Brandon_18",
-    estado: "activo",
-    url_captura: "Capturas/Brandon_18.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Sleezzyy",
-    estado: "activo",
-    url_captura: "Capturas/Sleezzyy.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "xtheCancerCam",
-    estado: "activo",
-    url_captura: "Capturas/xtheCancerCam.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Jesusmiguel6",
-    estado: "activo",
-    url_captura: "Capturas/Jesusmiguel6.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Mr.Flips",
-    estado: "activo",
-    url_captura: "Capturas/Mr.Flips.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Disver",
     estado: "activo",
-    url_captura: "Capturas/Disver.mp4"
+    url_captura: "Capturas/Disver.mov"
   },
   {
     nombre: "Drakelly",
-    estado: "activo",
-    url_captura: "Capturas/Drakelly.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Joandix",
-    estado: "activo",
-    url_captura: "Capturas/Joandix.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "soyleyne",
-    estado: "activo",
-    url_captura: "Capturas/soyleyne.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "_laabluue",
@@ -826,13 +826,13 @@ const usuariosNexo = [
   },
   {
     nombre: "Kirito_Kayu",
-    estado: "activo",
-    url_captura: "Capturas/Kirito_Kayu.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "labluue",
-    estado: "activo",
-    url_captura: "Capturas/Labluue.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Rubencillo",
@@ -841,27 +841,112 @@ const usuariosNexo = [
   },
   {
     nombre: "omar_52785",
-    estado: "activo",
-    url_captura: "Capturas/omar_52785.mp4"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Parejabluue",
-    estado: "activo",
-    url_captura: "Capturas/Parejabluue.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Kath",
-    estado: "activo",
-    url_captura: "Capturas/Kath.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Annily",
-    estado: "activo",
-    url_captura: "Capturas/Annily.jpg"
+    estado: "suspendido",
+    url_captura: ""
   },
   {
     nombre: "Wertyjal fn",
+    estado: "suspendido",
+    url_captura: ""
+  },
+  {
+    nombre: "C.Garcia",
     estado: "activo",
-    url_captura: "Capturas/Wertyjal fn.jpg"
+    url_captura: "Capturas/C.Garcia.jpg"
+  },
+  {
+    nombre: "danielfx1.",
+    estado: "activo",
+    url_captura: "Capturas/danielfx1..jpg"
+  },
+  {
+    nombre: "Richard._.",
+    estado: "activo",
+    url_captura: "Capturas/Richard._..jpg"
+  },
+  {
+    nombre: "Deimon200919",
+    estado: "activo",
+    url_captura: "Capturas/Deimon200919.jpg"
+  },
+  {
+    nombre: "Noopo",
+    estado: "activo",
+    url_captura: "Capturas/Noopo.jpg"
+  },
+  {
+    nombre: "Fernis",
+    estado: "activo",
+    url_captura: "Capturas/Fernis.jpg"
+  },
+  {
+    nombre: "elOmar26112013",
+    estado: "activo",
+    url_captura: "Capturas/elOmar26112013.jpg"
+  },
+  {
+    nombre: "Sitogamingz",
+    estado: "activo",
+    url_captura: "Capturas/Sitogamingz.jpg"
+  },
+  {
+    nombre: "uri08705",
+    estado: "activo",
+    url_captura: "Capturas/uri08705.jpg"
+  },
+  {
+    nombre: "Elmo 360Cionec",
+    estado: "activo",
+    url_captura: "Capturas/Elmo 360Cionec.jpg"
+  },
+  {
+    nombre: "labluee",
+    estado: "activo",
+    url_captura: "Capturas/labluee.jpg"
+  },
+  {
+    nombre: "albiin7",
+    estado: "activo",
+    url_captura: "Capturas/albiin7.jpg"
+  },
+  {
+    nombre: "JesusMiguel",
+    estado: "activo",
+    url_captura: "Capturas/JesusMiguel.jpg"
+  },
+  {
+    nombre: "pablo054159",
+    estado: "activo",
+    url_captura: "Capturas/pablo054159.jpg"
+  },
+  {
+    nombre: "javi5d",
+    estado: "activo",
+    url_captura: "Capturas/javi5d.jpg"
+  },
+  {
+    nombre: "Estoico Mayorista",
+    estado: "activo",
+    url_captura: "Capturas/Estoico Mayorista.jpg"
+  },
+  {
+    nombre: "Dharma",
+    estado: "activo",
+    url_captura: "Capturas/Dharma.jpg"
   }
 ];
