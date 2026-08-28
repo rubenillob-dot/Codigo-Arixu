@@ -291,8 +291,8 @@ const usuariosNexo = [
   },
   {
     nombre: "Mauj",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Mauj.jpg"
   },
   {
     nombre: "mavericks96_",
@@ -481,8 +481,8 @@ const usuariosNexo = [
   },
   {
     nombre: "raquelvete",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/Raquelvete.jpg"
   },
   {
     nombre: "Raul",
@@ -948,5 +948,60 @@ const usuariosNexo = [
     nombre: "Dharma",
     estado: "activo",
     url_captura: "Capturas/Dharma.jpg"
+  },
+  {
+    nombre: "Rodricadi2",
+    estado: "activo",
+    url_captura: "Capturas/Rodricadi2.mov"
+  },
+  {
+    nombre: "aaron037532",
+    estado: "activo",
+    url_captura: "Capturas/aaron037532.jpg"
+  },
+  {
+    nombre: "BlackWolf",
+    estado: "activo",
+    url_captura: "Capturas/BlackWolf.jpg"
+  },
+  {
+    nombre: "Mariola",
+    estado: "activo",
+    url_captura: "Capturas/Mariola.jpg"
+  },
+  {
+    nombre: "educsemar",
+    estado: "activo",
+    url_captura: "Capturas/educsemar.jpg"
+  },
+  {
+    nombre: "Vivi77_rct",
+    estado: "activo",
+    url_captura: "Capturas/Vivi77_rct.jpg"
+  },
+  {
+    nombre: "Rubenillo07",
+    estado: "activo",
+    url_captura: "Capturas/Rubenillo07.jpg"
+  },
+  {
+    nombre: "Wanda",
+    estado: "activo",
+    url_captura: "Capturas/Wanda.jpg"
+  },
+  {
+    nombre: "PANiko",
+    estado: "activo",
+    url_captura: "Capturas/PANiko.jpg"
+  },
+  {
+    nombre: "crispiba07",
+    estado: "activo",
+    url_captura: "Capturas/crispiba07.jpg"
+  },
+  {
+    nombre: "Jelpro24",
+    estado: "activo",
+    url_captura: "Capturas/Jelpro24.jpg"
   }
 ];
