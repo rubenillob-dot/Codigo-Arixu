@@ -1003,5 +1003,10 @@ const usuariosNexo = [
     nombre: "Jelpro24",
     estado: "activo",
     url_captura: "Capturas/Jelpro24.jpg"
+  },
+  {
+    nombre: "juanchi",
+    estado: "activo",
+    url_captura: "Capturas/juanchi.jpg"
   }
 ];
