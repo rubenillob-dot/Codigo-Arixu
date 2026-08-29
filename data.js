@@ -466,7 +466,7 @@ const usuariosNexo = [
   },
   {
     nombre: "Piyuyin6",
-    estado: "activo",
+    estado: "suspendido",
     url_captura: ""
   },
   {
