@@ -35,8 +35,8 @@ function startApp() {
   ];
   
   // --- VARIABLES DE ESTADO ---
-  var TARGET_GOAL = 300;
-  var MANUAL_ACTIVE_COUNT = 360; // Conteo manual para pruebas / inicio de mes
+  var TARGET_GOAL = 400;
+  var MANUAL_ACTIVE_COUNT = 397; // Conteo manual para pruebas / inicio de mes
   
   // --- BOTÓN DE REINICIAR GANADORES DE SKINS ---
   var btnResetGanadores = document.getElementById("btn-reset-ganadores");
@@ -191,7 +191,7 @@ function startApp() {
     return card;
   }
 
-  // --- CONTROL DE RECOMPENSAS (META DE 300) ---
+  // --- CONTROL DE RECOMPENSAS (META DE 400) ---
   function updateRewards(activeCount) {
     var remaining = TARGET_GOAL - activeCount;
     
@@ -212,7 +212,7 @@ function startApp() {
       
       rewardsTitle.innerHTML = '<i class="fa-solid fa-trophy" style="color: var(--neon-gold); text-shadow: 0 0 15px var(--neon-gold-glow)"></i> ¡META CONSEGUIDA: RECOMPENSAS DESBLOQUEADAS!';
       rewardsTitle.classList.add("highlight-text");
-      rewardsSubtitle.textContent = "¡Felicitaciones a toda la comunidad! Hemos alcanzado los 300 códigos activos. Los sorteos de las 3 Skins están habilitados.";
+      rewardsSubtitle.textContent = "¡Felicitaciones a toda la comunidad! Hemos alcanzado los " + TARGET_GOAL + " códigos activos. Los sorteos de las 3 Skins están habilitados.";
       dynamicStatusMessage.innerHTML = 
         '<div class="highlight-text" style="font-size:1.35rem; color: var(--neon-gold); font-family: var(--font-gaming); display: inline-block;">🏆 ¡SORTEO DE LAS 3 SKINS DESBLOQUEADO CON ÉXITO! 🏆</div>';
       
@@ -234,7 +234,7 @@ function startApp() {
       
       rewardsTitle.innerHTML = '<i class="fa-solid fa-lock"></i> Recompensas Bloqueadas';
       rewardsTitle.classList.remove("highlight-text");
-      rewardsSubtitle.textContent = "Al alcanzar los 300 códigos activos, desbloquearemos los siguientes premios:";
+      rewardsSubtitle.textContent = "Al alcanzar los " + TARGET_GOAL + " códigos activos, desbloquearemos los siguientes premios:";
       
       // Mensaje dinámico exacto de resta
       dynamicStatusMessage.innerHTML = 'Faltan <span id="users-remaining" class="status-highlight">' + remaining + '</span> usuarios activos para desbloquear la recompensa final.';
@@ -610,7 +610,7 @@ function startApp() {
         var nombresOrd = ["primera", "segunda", "tercera"];
         title.textContent = "Sorteo de la " + nombresOrd[i - 1] + " skin";
       }
-      if (desc) desc.textContent = "Se desbloquea al alcanzar los 300 usuarios activos.";
+      if (desc) desc.textContent = "Se desbloquea al alcanzar los " + TARGET_GOAL + " usuarios activos.";
     }
   }
 }

@@ -11,7 +11,7 @@ Este repositorio es una aplicación web dinámica con estética *gamer/cyberpunk
 ### ✨ Funcionalidades Principales
 
 1. **📊 Dashboard de la Meta Central**:
-   - Barra de progreso reactiva en tiempo real y contador de usuarios activos respecto a la meta comunitaria (ej. 300 apoyos).
+   - Barra de progreso reactiva en tiempo real y contador de usuarios activos respecto a la meta comunitaria (ej. 400 apoyos).
    - Animaciones y efectos visuales al alcanzar la meta.
 
 2. **🌟 El Paseo de la Fama (VIP Activos)**:
