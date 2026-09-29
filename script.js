@@ -36,7 +36,7 @@ function startApp() {
   
   // --- VARIABLES DE ESTADO ---
   var TARGET_GOAL = 400;
-  var MANUAL_ACTIVE_COUNT = 397; // Conteo manual para pruebas / inicio de mes
+  var MANUAL_ACTIVE_COUNT = 274; // Conteo manual para pruebas / inicio de mes
   
   // --- BOTÓN DE REINICIAR GANADORES DE SKINS ---
   var btnResetGanadores = document.getElementById("btn-reset-ganadores");
