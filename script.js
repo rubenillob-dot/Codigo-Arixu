@@ -174,7 +174,7 @@ function startApp() {
     
     var imgUrl = usuario.url_captura ? usuario.url_captura : "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80";
     
-    var isVideo = imgUrl.toLowerCase().endsWith(".mp4") || imgUrl.toLowerCase().endsWith(".mov");
+    var isVideo = imgUrl.toLowerCase().endsWith(".mp4") || imgUrl.toLowerCase().endsWith(".mov") || imgUrl.toLowerCase().endsWith(".webm") || imgUrl.toLowerCase().endsWith(".mkv");
     var mediaHtml = isVideo 
       ? '<video src="' + imgUrl + '" muted playsinline autoplay loop class="user-thumbnail-video" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"></video>'
       : '<img src="' + imgUrl + '" alt="Captura de ' + usuario.nombre + '" loading="lazy">';

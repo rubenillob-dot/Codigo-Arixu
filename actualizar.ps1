@@ -14,7 +14,7 @@ if (-not (Test-Path $capturasPath)) {
     Exit 1
 }
 
-$validExtensions = @(".png", ".jpg", ".jpeg", ".webp", ".gif", ".mp4", ".mov")
+$validExtensions = @(".png", ".jpg", ".jpeg", ".webp", ".gif", ".mp4", ".mov", ".mkv", ".webm")
 $activeFiles = @{}
 
 $files = Get-ChildItem -Path $capturasPath -File
