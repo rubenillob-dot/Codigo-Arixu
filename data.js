@@ -921,8 +921,8 @@ const usuariosNexo = [
   },
   {
     nombre: "albiin7",
-    estado: "suspendido",
-    url_captura: ""
+    estado: "activo",
+    url_captura: "Capturas/albiin7.webp"
   },
   {
     nombre: "JesusMiguel",
@@ -1058,5 +1058,10 @@ const usuariosNexo = [
     nombre: "Chris tinoco",
     estado: "activo",
     url_captura: "Capturas/Chris tinoco.webp"
+  },
+  {
+    nombre: "leonsantana1",
+    estado: "activo",
+    url_captura: "Capturas/leonsantana1.webp"
   }
 ];
