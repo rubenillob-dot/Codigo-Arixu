@@ -1063,5 +1063,20 @@ const usuariosNexo = [
     nombre: "leonsantana1",
     estado: "activo",
     url_captura: "Capturas/leonsantana1.webp"
+  },
+  {
+    nombre: "Jordi",
+    estado: "activo",
+    url_captura: "Capturas/Jordi.webp"
+  },
+  {
+    nombre: "Mondarizano",
+    estado: "activo",
+    url_captura: "Capturas/Mondarizano.webp"
+  },
+  {
+    nombre: "Mrbanquito",
+    estado: "activo",
+    url_captura: "Capturas/Mrbanquito.webp"
   }
 ];
