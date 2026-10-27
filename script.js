@@ -35,8 +35,8 @@ function startApp() {
   ];
   
   // --- VARIABLES DE ESTADO ---
-  var TARGET_GOAL = 400;
-  var MANUAL_ACTIVE_COUNT = 274; // Conteo manual para pruebas / inicio de mes
+  var TARGET_GOAL = 300;
+  var MANUAL_ACTIVE_COUNT = 250; // Conteo manual para pruebas / inicio de mes
   
   // --- BOTÓN DE REINICIAR GANADORES DE SKINS ---
   var btnResetGanadores = document.getElementById("btn-reset-ganadores");
@@ -191,7 +191,7 @@ function startApp() {
     return card;
   }
 
-  // --- CONTROL DE RECOMPENSAS (META DE 400) ---
+  // --- CONTROL DE RECOMPENSAS (META DE 300) ---
   function updateRewards(activeCount) {
     var remaining = TARGET_GOAL - activeCount;
     
